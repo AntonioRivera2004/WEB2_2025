@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G4TO</title>
+    <style>
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+            font-family: sans-serif;
+            
+        }
+
+        .contenedor 
+        {
+            display: grid;
+            grid-template-columns: repeat(3, 150px); /* 3 columnas */
+            grid-gap: 20px;
+        }
+
+        button {
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background-color: #ae00ff;
+      color: white;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+     body {
+      display: flex;
+      flex-direction: column; /* Para colocar el título arriba y los botones debajo */
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+    }
+
+    /* Estilo del título */
+    h1 {
+      font-size: 60px;
+      font-family: 'Comic Sans MS', 'Arial', sans-serif; /* letra chida y divertida */
+      color: #160f0b;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      margin-bottom: 40px; /* separa del contenedor de botones */
+    }
+    </style>
+</head>
+<body>
+        <h1>GATO</h1>
+
+    <!-- Dropdown -->
+  <label for="turno">Turno:</label>
+  <select id="turno">
+    <option value="Player1">Seleccionar</option>
+    <option value="Player1">Player1</option>
+    <option value="Player2">Player2</option>
+
+  </select>
+
+    <div class="contenedor">
+    <button id="btn1">Botón 1</button>
+    <button id="btn2">Botón 2</button>
+    <button id="btn3">Botón 3</button>
+    <button id="btn4">Botón 4</button>
+    <button id="btn5">Botón 5</button>
+    <button id="btn6">Botón 6</button>
+    <button id="btn7">Botón 7</button>
+    <button id="btn8">Botón 8</button>
+    <button id="btn9">Botón 9</button>
+  </div>
+
+</body>
+<script src="app.js"></script>
+</html>
